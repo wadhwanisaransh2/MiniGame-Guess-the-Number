@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiniGame - Guess the Number</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Guessing2.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  </style>
+</head>
+<body class="body">
+  <div class="container game-container shadow-lg">
+    <h1 class="heading text-center">🎯 Guess The Number</h1>
+    
+    <div class="row align-items-center flex-md-row flex-column-reverse mt-4">
+      <div class="col-md-6 instructions">
+        <ul class="steps list-unstyled">
+          <li><strong>Step 1:</strong> Enter the maximum number limit</li>
+          <li><strong>Step 2:</strong> A random number is generated</li>
+          <li><strong>Step 3:</strong> Start guessing!</li>
+          <li><strong>Step 4:</strong> Get hints and try again</li>
+          <li><strong>Step 5:</strong> Guess correctly to win 🎉</li>
+        </ul>
+        <p class="hint-box text-center mt-3">
+          💡 <strong>Hint:</strong> You'll be told if your guess is too high or too low.
+        </p>
+      </div>
+      
+      <div class="col-md-6 text-center">
+        <img src="guess-the-number2.png" alt="Guessing Game" class="img-fluid game-image rounded" />
+      </div>
+    </div>
+
+    <div class="button-row text-center mt-4">
+      <button type="button" class="btn btn-lg btn-outline-primary me-3">Start Game</button>
+      <button type="button" class="btn btn-lg btn-outline-danger">Exit Game</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Guessing2.js"></script>
+</body>
+</html>
